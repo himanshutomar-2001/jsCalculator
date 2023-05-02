@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*to add the border and padding to height and width */
+}
+
+body{
+    min-height: 100vh;
+    background-image:linear-gradient(to bottom, orange,lime);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Calculator{
+    /* border: 2px solid green; */
+    height: 500px;
+    width: 300px;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 12px;
+    background-color: #22252d;
+    overflow: hidden;
+    
+    
+}
+
+form input{
+   width: 100%; 
+   height: 152px;
+   border: none;
+   border-radius: 12px;
+   font-size: 2rem;
+   padding: 1rem;
+   color:white;
+   background: black;
+   text-align: right;     /* to enter value from right side for calculator */
+   pointer-events: none;    /* pointer events none to stop changing or typing */
+
+
+}
+
+.buttons{
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+button {
+    flex:0 0 22%;
+    margin: 5px 0px;
+    border: 1px solid black;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow{
+ background: rgb(245,146,62);  
+    color: #fff;
+}
+
+.btn-grey{
+    background: grey;
+}
+.btn-equal{
+    background:green;
+}
+.btn-clear{
+background: red;
+}
